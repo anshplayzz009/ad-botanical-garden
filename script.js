@@ -51,42 +51,42 @@ document.addEventListener("DOMContentLoaded", function () {
             name: "Neem",
             scientific: "Azadirachta indica",
             category: "Medicinal Plant",
-            image: "images/plants/neem.jpg",
+            image: "neem.jpg",
             link: "plant-neem.html"
         },
         {
             name: "Rose",
             scientific: "Rosa",
             category: "Flowering Plant",
-            image: "images/plants/rose.jpg",
+            image: "rose.jpg",
             link: "plant-rose.html"
         },
         {
             name: "Sacred Lotus",
             scientific: "Nelumbo nucifera",
             category: "Aquatic Plant",
-            image: "images/plants/lotus.jpg",
+            image: "lotus.jpg",
             link: "plant-lotus.html"
         },
         {
             name: "Hibiscus",
             scientific: "Hibiscus rosa-sinensis",
             category: "Flowering Plant",
-            image: "images/plants/hibiscus.jpg",
+            image: "hibiscus.jpg",
             link: "plant-hibiscus.html"
         },
         {
             name: "Banyan",
             scientific: "Ficus benghalensis",
             category: "Heritage Tree",
-            image: "images/plants/banyan.jpg",
+            image: "banyan.jpg",
             link: "plant-banyan.html"
         },
         {
             name: "Aloe Vera",
             scientific: "Aloe vera",
             category: "Succulent Plant",
-            image: "images/plants/aloe-vera.jpg",
+            image: "aloe-vera.jpg",
             link: "plant-aloe-vera.html"
         }
     ];
