@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Botanical Journal | AD Botanical Garden</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta
+        name="description"
+        content="Explore the digital botanical journal of AD Botanical Garden."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <span class="leaf-symbol">❧</span>
+                <span>AD Botanical Garden</span>
+            </a>
+
+            <button
+                class="menu-button"
+                onclick="toggleMenu()"
+                aria-label="Open navigation"
+            >
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+
+                <a href="index.html">Home</a>
+                <a href="plants.html" class="active">Journal</a>
+                <a href="categories.html">Categories</a>
+                <a href="search.html">Search</a>
+                <a href="conservation.html">Conservation</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+        <!-- JOURNAL INTRO -->
+
+        <section class="journal-hero">
+
+            <div class="journal-hero-content">
+
+                <p class="eyebrow">
+                    AD BOTANICAL JOURNAL
+                </p>
+
+                <h1>
+                    The Plant Archive
+                </h1>
+
+                <p>
+                    Explore a growing collection of plant species,
+                    botanical information, and field notes from the
+                    digital garden.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIGITAL GARDEN NOTICE -->
+
+        <section class="digital-notice">
+
+            <div class="notice-inner">
+
+                <span class="notice-icon">🌿</span>
+
+                <div>
+
+                    <h2>
+                        Explore digitally
+                    </h2>
+
+                    <p>
+                        This journal is part of AD Botanical Garden,
+                        a digitalized botanical garden. The information
+                        can be explored online, but there is no physical
+                        garden or location to visit.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PLANT COLLECTION -->
+
+        <section class="plant-collection section">
+
+            <div class="section-title">
+
+                <p class="eyebrow">
+                    FIELD NOTES
+                </p>
+
+                <h2>
+                    Plant Collection
+                </h2>
+
+                <p>
+                    A growing collection of plants and botanical notes.
+                </p>
+
+            </div>
+
+
+            <!-- CATEGORY FILTERS -->
+
+            <div class="plant-filters">
+
+                <button class="filter-button active">
+                    All Plants
+                </button>
+
+                <button class="filter-button">
+                    Flowering Plants
+                </button>
+
+                <button class="filter-button">
+                    Trees
+                </button>
+
+                <button class="filter-button">
+                    Medicinal Plants
+                </button>
+
+                <button class="filter-button">
+                    Herbs & Shrubs
+                </button>
+
+                <button class="filter-button">
+                    Cacti & Succulents
+                </button>
+
+            </div>
+
+
+            <!-- PLANT GRID -->
+
+            <div class="plant-grid">
+
+<!-- PLANT SEARCH & FILTER -->
+
+<section class="plant-tools">
+
+    <div class="plant-search">
+        <input
+            type="text"
+            id="plantSearch"
+            placeholder="Search plants..."
+            aria-label="Search plants"
+        >
+    </div>
+
+    <div class="plant-filters">
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="medicinal">
+            Medicinal
+        </button>
+
+        <button class="filter-btn" data-filter="aquatic">
+            Aquatic
+        </button>
+
+        <button class="filter-btn" data-filter="flowering">
+            Flowering
+        </button>
+    </div>
+
+</section>
+                <!-- PLANT 1 -->
+
+<article class="plant-card" data-category="medicinal">
+
+                    <div class="plant-image">
+
+                        <img
+                            src="images/plants/neem.jpg"
+                            alt="Neem tree"
+                        >
+
+                    </div>
+
+                    <div class="plant-info">
+
+                        <p class="plant-category">
+                            MEDICINAL PLANT
+                        </p>
+
+                        <h3>
+                            Neem
+                        </h3>
+
+                        <p class="scientific-name">
+                            Azadirachta indica
+                        </p>
+
+                        <p>
+                            A widely known evergreen tree valued for
+                            its ecological, traditional and medicinal
+                            significance.
+                        </p>
+<a href="plant-neem.html" class="text-link">
+    Explore Plant →
+</a>
+                    </div>
+
+                </article>
+
+
+                <!-- PLANT 2 -->
+
+<article class="plant-card" data-category="aquatic">
+
+                    <div class="plant-image">
+
+                        <img
+                            src="images/plants/lotus.jpg"
+                            alt="Lotus flower"
+                        >
+
+                    </div>
+
+                    <div class="plant-info">
+
+                        <p class="plant-category">
+                            AQUATIC PLANT
+                        </p>
+
+                        <h3>
+                            Sacred Lotus
+                        </h3>
+
+                        <p class="scientific-name">
+                            Nelumbo nucifera
+                        </p>
+
+                        <p>
+                            An aquatic flowering plant known for its
+                            distinctive flowers and floating leaves.
+                        </p>
+
+<a href="plant-lotus.html" class="text-link">
+    Explore Plant →
+</a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PLANT 3 -->
+
+<article class="plant-card" data-category="flowering">
+
+                    <div class="plant-image">
+
+                        <img
+                            src="images/plants/rose.jpg"
+                            alt="Rose flower"
+                        >
+                    </div>
+
+                    <div class="plant-info">
+
+                        <p class="plant-category">
+                            FLOWERING PLANT
+                        </p>
+
+                        <h3>
+                            Rose
+                        </h3>
+
+                        <p class="scientific-name">
+                            Rosa
+                        </p>
+
+                        <p>
+                            A diverse group of flowering plants known
+                            for their colourful blooms and fragrance.
+                        </p>
+<a href="plant-rose.html" class="text-link">
+    Explore Plant →
+</a>
+                    </div>
+
+                </article>
+
+
+                <!-- PLANT 4 -->
+
+<article class="plant-card" data-category="flowering">
+    
+                    <div class="plant-image">
+
+                        <img
+                            src="images/plants/hibiscus.jpg"
+                            alt="Hibiscus flower"
+                        >
+
+                    </div>
+
+                    <div class="plant-info">
+
+                        <p class="plant-category">
+                            FLOWERING PLANT
+                        </p>
+
+                        <h3>
+                            Hibiscus
+                        </h3>
+
+                        <p class="scientific-name">
+                            Hibiscus rosa-sinensis
+                        </p>
+
+                        <p>
+                            A flowering shrub with large, colourful
+                            flowers commonly cultivated in tropical
+                            and subtropical regions.
+                        </p>
+
+<a href="plant-hibiscus.html" class="text-link">
+    Explore Plant →
+</a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PLANT 5 -->
+
+<article class="plant-card" data-category="succulent">
+
+                    <div class="plant-image">
+
+                        <img
+                            src="images/plants/aloe-vera.jpg"
+                            alt="Aloe vera plant"
+                        >
+
+                    </div>
+
+                    <div class="plant-info">
+
+                        <p class="plant-category">
+                            SUCCULENT
+                        </p>
+
+                        <h3>
+                            Aloe Vera
+                        </h3>
+
+                        <p class="scientific-name">
+                            Aloe vera
+                        </p>
+
+                        <p>
+                            A succulent plant adapted to dry environments
+                            and known for its thick, water-storing leaves.
+                        </p>
+
+<a href="plant-aloe-vera.html" class="text-link">
+    Explore Plant →
+</a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PLANT 6 -->
+
+<article class="plant-card" data-category="heritage">       
+
+                    <div class="plant-image">
+
+                        <img
+                            src="images/plants/banyan.jpg"
+                            alt="Banyan tree"
+                        >
+
+                    </div>
+
+                    <div class="plant-info">
+
+                        <p class="plant-category">
+                            TREE
+                        </p>
+
+                        <h3>
+                            Banyan
+                        </h3>
+
+                        <p class="scientific-name">
+                            Ficus benghalensis
+                        </p>
+
+                        <p>
+                            A large fig tree recognised for its extensive
+                            branches and aerial prop roots.
+                        </p>
+
+<a href="plant-banyan.html" class="text-link">
+    Explore Plant →
+</a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- FUTURE COLLECTION -->
+
+        <section class="journal-section">
+
+            <div class="journal-inner">
+
+                <div>
+
+                    <p class="eyebrow">
+                        A GROWING ARCHIVE
+                    </p>
+
+                    <h2>
+                        More species will be added.
+                    </h2>
+
+                </div>
+
+                <div>
+
+                    <p>
+                        AD Botanical Garden is designed as a growing
+                        digital archive. New plant species can be added
+                        to the journal as the collection expands.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>
+                    AD Botanical Garden
+                </h3>
+
+                <p>
+                    A Digitalized Botanical Garden by
+                    <strong>Ansuman Dakua</strong>.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="plants.html">Journal</a>
+                <a href="categories.html">Categories</a>
+                <a href="search.html">Search</a>
+                <a href="conservation.html">About</a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 AD Botanical Garden · Created by Ansuman Dakua
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+<script>
+const searchInput = document.getElementById("plantSearch");
+const filterButtons = document.querySelectorAll(".filter-btn");
+const plantCards = document.querySelectorAll(".plant-card");
+
+function filterPlants() {
+    const searchText = searchInput.value.toLowerCase();
+    const activeFilter =
+        document.querySelector(".filter-btn.active").dataset.filter;
+
+    plantCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        const category =
+            card.querySelector(".plant-category")?.textContent.toLowerCase() || "";
+
+        const matchesSearch = text.includes(searchText);
+
+        const matchesFilter =
+            activeFilter === "all" ||
+            category.includes(activeFilter);
+
+        card.style.display =
+            matchesSearch && matchesFilter ? "" : "none";
+    });
+}
+
+searchInput.addEventListener("input", filterPlants);
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+
+        filterButtons.forEach(btn =>
+            btn.classList.remove("active")
+        );
+
+        button.classList.add("active");
+
+        filterPlants();
+    });
+});
+</script>
+</body>
+
+</html>

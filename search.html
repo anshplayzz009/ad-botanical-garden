@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Search | AD Botanical Garden</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <span class="leaf-symbol">❧</span>
+                <span>AD Botanical Garden</span>
+            </a>
+
+            <button
+                class="menu-button"
+                onclick="toggleMenu()"
+                aria-label="Open navigation"
+            >
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+
+                <a href="index.html">Home</a>
+                <a href="plants.html">Journal</a>
+                <a href="categories.html">Categories</a>
+                <a href="search.html" class="active">Search</a>
+                <a href="conservation.html">Conservation</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- SEARCH PAGE -->
+
+    <main>
+
+        <section class="search-hero">
+
+            <p class="eyebrow">
+                BOTANICAL JOURNAL
+            </p>
+
+            <h1>
+                Search the Garden
+            </h1>
+
+            <p>
+                Search the AD Botanical Garden collection by plant
+                name or scientific name.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="search"
+                    id="plantSearch"
+                    placeholder="Search for a plant..."
+                    autocomplete="off"
+                >
+
+                <button id="searchButton">
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH RESULTS -->
+
+        <section class="search-results-section">
+
+            <div class="search-results-header">
+
+                <p class="eyebrow">
+                    RESULTS
+                </p>
+
+                <h2 id="searchTitle">
+                    Explore the collection
+                </h2>
+
+            </div>
+
+
+            <div id="searchResults" class="search-results">
+
+                <div class="search-empty">
+
+                    <span>🌿</span>
+
+                    <p>
+                        Start typing a plant name to search
+                        the collection.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>
+                    AD Botanical Garden
+                </h3>
+
+                <p>
+                    A Digitalized Botanical Garden by
+                    <strong>Ansuman Dakua</strong>.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="plants.html">Journal</a>
+                <a href="categories.html">Categories</a>
+                <a href="search.html">Search</a>
+                <a href="conservation.html">Conservation</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 AD Botanical Garden · Created by Ansuman Dakua
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

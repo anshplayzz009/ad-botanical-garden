@@ -1,0 +1,3338 @@
+/* =========================================
+   AD BOTANICAL GARDEN
+   Botanical Journal Styles
+========================================= */
+
+
+/* ---------- BASIC RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f4f2e9;
+    color: #26382b;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(244, 242, 233, 0.97);
+    border-bottom: 1px solid #d5d5c8;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+
+.leaf-symbol {
+    font-size: 1.7rem;
+    margin-right: 7px;
+    color: #48634c;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    font-family: Arial, sans-serif;
+    font-size: 0.86rem;
+    color: #59675b;
+
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #1f422b;
+}
+
+
+/* ---------- MOBILE MENU ---------- */
+
+.menu-button {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    font-size: 1.7rem;
+    color: #26382b;
+
+    cursor: pointer;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 720px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(25, 53, 35, 0.58),
+            rgba(25, 53, 35, 0.68)
+        ),
+        url("images/hero-botanical.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    width: min(850px, 90%);
+}
+
+.eyebrow {
+    font-family: Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 14px;
+
+    opacity: 0.85;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 6.2rem);
+    line-height: 1.05;
+
+    margin-bottom: 18px;
+}
+
+.creator {
+    font-size: 1.15rem;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 680px;
+    margin: auto;
+
+    font-size: 1.05rem;
+    color: #f0f3ed;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.hero-buttons {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.88rem;
+
+    border-radius: 3px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.primary-button {
+    background: #eef1df;
+    color: #263d2c;
+}
+
+.primary-button:hover {
+    background: white;
+}
+
+.secondary-button {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
+.secondary-button:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+
+/* ---------- GENERAL SECTIONS ---------- */
+
+.section {
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 90px 25px;
+}
+
+.section-heading {
+    max-width: 760px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.section-heading h2,
+.section-title h2 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.section-heading p:not(.eyebrow) {
+    color: #657167;
+}
+
+
+/* ---------- INTRODUCTION ---------- */
+
+.intro {
+    background: #f4f2e9;
+}
+
+.intro .section-heading p + p {
+    margin-top: 15px;
+}
+
+
+/* ---------- DIGITAL NOTICE ---------- */
+
+.digital-notice {
+    background: #e2e6d9;
+
+    padding: 55px 25px;
+}
+
+.notice-inner {
+    max-width: 900px;
+    margin: auto;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.notice-icon {
+    font-size: 2.5rem;
+}
+
+.notice-inner h2 {
+    margin-bottom: 10px;
+
+    font-size: 1.7rem;
+}
+
+.notice-inner p {
+    color: #59665c;
+}
+
+
+/* ---------- CATEGORIES ---------- */
+
+.categories-section {
+    padding-top: 95px;
+}
+
+.section-title {
+    max-width: 750px;
+    margin: auto auto 45px;
+
+    text-align: center;
+}
+
+.section-title > p:last-child {
+    color: #69756b;
+}
+
+.category-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.category-card {
+    min-height: 210px;
+
+    padding: 30px;
+
+    background: #e9e8dd;
+
+    border: 1px solid #d4d4c8;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+
+    background: #efeee6;
+
+    box-shadow:
+        0 12px 30px rgba(35, 55, 40, 0.10);
+}
+
+.category-icon {
+    display: block;
+
+    font-size: 2.3rem;
+
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    font-size: 1.3rem;
+
+    margin-bottom: 8px;
+}
+
+.category-card p {
+    font-family: Arial, sans-serif;
+
+    font-size: 0.88rem;
+
+    color: #69746c;
+}
+
+
+/* ---------- JOURNAL ---------- */
+
+.journal-section {
+    background: #283d2f;
+
+    color: #f2f3eb;
+
+    padding: 90px 25px;
+}
+
+.journal-inner {
+    max-width: 1050px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.journal-inner h2 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+
+    line-height: 1.15;
+}
+
+.journal-inner p:not(.eyebrow) {
+    color: #d0d8d0;
+}
+
+.text-link {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    border-bottom: 1px solid currentColor;
+
+    padding-bottom: 3px;
+
+    transition: opacity 0.2s ease;
+}
+
+.text-link:hover {
+    opacity: 0.7;
+}
+
+
+/* ---------- CONSERVATION ---------- */
+
+.conservation-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+    background: #17241b;
+
+    color: #dce3da;
+
+    padding: 55px 25px 25px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #aeb8ae;
+}
+
+.footer-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    align-content: flex-start;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.86rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    max-width: 1100px;
+    margin: 40px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #39483d;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.78rem;
+
+    color: #89968b;
+}
+
+
+/* =========================================
+   MOBILE DESIGN
+========================================= */
+
+@media (max-width: 800px) {
+
+    /* Navigation */
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 64px;
+        left: 0;
+        right: 0;
+
+        background: #f4f2e9;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        border-bottom: 1px solid #d5d5c8;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 14px 24px;
+
+        border-bottom: 1px solid #deded3;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 680px;
+
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-text {
+        font-size: 0.98rem;
+    }
+
+
+    /* Digital notice */
+
+    .notice-inner {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    /* Categories */
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Journal */
+
+    .journal-inner {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    /* Footer */
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+}
+
+
+/* ---------- SMALL PHONES ---------- */
+
+@media (max-width: 420px) {
+
+    .navbar {
+        padding: 14px 17px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+}
+/* =========================================
+   BOTANICAL JOURNAL
+========================================= */
+
+
+/* ---------- JOURNAL HERO ---------- */
+
+.journal-hero {
+    padding: 110px 25px 90px;
+
+    background:
+        linear-gradient(
+            rgba(237, 235, 222, 0.88),
+            rgba(237, 235, 222, 0.88)
+        ),
+        url("images/hero-botanical.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.journal-hero-content {
+    max-width: 1050px;
+    margin: auto;
+}
+
+.journal-hero h1 {
+    max-width: 800px;
+
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 1.05;
+
+    margin: 15px 0 25px;
+}
+
+.journal-hero-content > p:last-child {
+    max-width: 650px;
+
+    font-size: 1.15rem;
+
+    color: #637066;
+}
+
+
+/* ---------- PLANT COLLECTION ---------- */
+
+.plant-collection {
+    padding-top: 90px;
+}
+
+
+/* ---------- FILTER BUTTONS ---------- */
+
+.plant-filters {
+    max-width: 1000px;
+    margin: 0 auto 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+}
+
+.filter-button {
+    padding: 9px 15px;
+
+    border: 1px solid #d0d2c5;
+
+    background: transparent;
+
+    color: #536157;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.78rem;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.filter-button:hover,
+.filter-button.active {
+    background: #2c4734;
+
+    color: #f4f2e9;
+
+    border-color: #2c4734;
+}
+
+
+/* ---------- PLANT GRID ---------- */
+
+.plant-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+/* ---------- PLANT CARD ---------- */
+
+.plant-card {
+    background: #ebeae0;
+
+    border: 1px solid #d9d8cc;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.plant-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(38, 56, 43, 0.12);
+}
+
+
+/* ---------- PLANT IMAGE ---------- */
+
+.plant-image {
+    width: 100%;
+    height: 280px;
+
+    background: #dfe2d5;
+
+    overflow: hidden;
+}
+
+.plant-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.plant-card:hover .plant-image img {
+    transform: scale(1.04);
+}
+
+
+/* ---------- PLANT INFORMATION ---------- */
+
+.plant-info {
+    padding: 25px;
+}
+
+.plant-category {
+    margin-bottom: 9px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.68rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1.7px;
+
+    color: #71806f;
+}
+
+.plant-info h3 {
+    margin-bottom: 4px;
+
+    font-size: 1.8rem;
+
+    line-height: 1.2;
+}
+
+.scientific-name {
+    margin-bottom: 15px;
+
+    font-size: 0.92rem;
+
+    font-style: italic;
+
+    color: #7b8179;
+}
+
+.plant-info > p:not(.plant-category):not(.scientific-name) {
+    font-family: Arial, sans-serif;
+
+    font-size: 0.86rem;
+
+    color: #69736b;
+}
+
+
+/* ---------- PLANT LINK ---------- */
+
+.plant-info .text-link {
+    margin-top: 20px;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 0.5px;
+
+    color: #304b38;
+}
+
+
+/* ---------- JOURNAL SECTION IMPROVEMENT ---------- */
+
+.journal-section {
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   JOURNAL MOBILE DESIGN
+========================================= */
+
+@media (max-width: 850px) {
+
+    .plant-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+    .plant-image {
+        height: 240px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .journal-hero {
+        padding: 75px 20px 65px;
+    }
+
+    .journal-hero h1 {
+        font-size: 3rem;
+    }
+
+    .journal-hero-content > p:last-child {
+        font-size: 1rem;
+    }
+
+
+    .plant-collection {
+        padding-top: 70px;
+    }
+
+
+    .plant-filters {
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        flex-wrap: nowrap;
+
+        padding-bottom: 8px;
+
+        scrollbar-width: none;
+    }
+
+    .plant-filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-button {
+        flex-shrink: 0;
+    }
+
+
+    .plant-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    .plant-image {
+        height: 260px;
+    }
+
+
+    .plant-info {
+        padding: 22px;
+    }
+
+}
+
+/* ================================
+   BOTANICAL FIELD NOTE
+   ================================ */
+
+.plant-details {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 24px;
+}
+
+.detail-card {
+    background: #f7f4e9;
+    border: 1px solid #d8d5c7;
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 14px rgba(25, 45, 35, 0.06);
+}
+
+.detail-card h2 {
+    color: #19382b;
+    font-size: 28px;
+    margin: 0 0 18px;
+    line-height: 1.25;
+}
+
+.detail-card p {
+    color: #30483c;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 8px 0;
+}
+
+.detail-card strong {
+    color: #19382b;
+}
+
+.detail-card em {
+    color: #4c6658;
+}
+
+.plant-fact {
+    background: #19382b;
+    color: #f7f4e9;
+    border-radius: 14px;
+    padding: 30px;
+    margin-top: 32px;
+}
+
+.plant-fact span {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+    opacity: 0.75;
+}
+
+.plant-fact p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+
+    .plant-details {
+        padding: 40px 16px;
+    }
+
+    .detail-card {
+        padding: 22px;
+        margin-bottom: 18px;
+    }
+
+    .detail-card h2 {
+        font-size: 24px;
+    }
+
+    .detail-card p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .plant-fact {
+        padding: 24px;
+    }
+
+    .plant-fact p {
+        font-size: 17px;
+    }
+}
+/* Prevent fixed header from covering page content */
+
+main,
+.plant-details {
+    scroll-margin-top: 90px;
+}
+
+.plant-details {
+    position: relative;
+    z-index: 1;
+}
+/* =================================
+   ROSE BOTANICAL PAGE
+   ================================= */
+
+.rose-hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.rose-hero-text {
+    padding: 20px;
+}
+
+.plant-label {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #6b756d;
+    margin-bottom: 18px;
+}
+
+.rose-hero h1 {
+    font-size: 72px;
+    margin: 0;
+    color: #19382b;
+    line-height: 1;
+}
+
+.scientific-name {
+    font-size: 25px;
+    color: #68766e;
+    margin: 22px 0;
+}
+
+.rose-intro {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #30483c;
+}
+
+.rose-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 160px 160px 20px 20px;
+    display: block;
+}
+
+
+/* Anatomy */
+
+.rose-anatomy {
+    background: #eee8dc;
+    padding: 70px 24px;
+}
+
+.rose-anatomy > * {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rose-anatomy h2,
+.rose-characteristics h2,
+.rose-pollination h2 {
+    font-size: 38px;
+    color: #19382b;
+}
+
+.anatomy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.anatomy-card {
+    background: #f8f5ed;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #d9d4c8;
+}
+
+.anatomy-card span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #7a827c;
+}
+
+.anatomy-card h3 {
+    color: #19382b;
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.anatomy-card p {
+    color: #405248;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+
+/* Characteristics */
+
+.rose-characteristics {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 75px 24px;
+}
+
+.rose-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #cfc9bd;
+    border: 1px solid #cfc9bd;
+    margin-top: 35px;
+}
+
+.rose-facts div {
+    background: #f7f4e9;
+    padding: 25px;
+}
+
+.rose-facts strong,
+.rose-facts span {
+    display: block;
+}
+
+.rose-facts strong {
+    color: #19382b;
+    margin-bottom: 8px;
+}
+
+.rose-facts span {
+    color: #53635a;
+    line-height: 1.5;
+}
+
+
+/* Pollination */
+
+.rose-pollination {
+    background: #19382b;
+    color: #f7f4e9;
+    padding: 75px 24px;
+    text-align: center;
+}
+
+.rose-pollination h2 {
+    color: #f7f4e9;
+}
+
+.rose-pollination p:last-child {
+    max-width: 750px;
+    margin: 20px auto 0;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+
+/* Did You Know */
+
+.rose-fact {
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 45px 30px;
+    text-align: center;
+    border: 1px solid #d4cfc3;
+    border-radius: 20px;
+}
+
+.rose-fact span {
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: #737c75;
+}
+
+.rose-fact h2 {
+    color: #19382b;
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .rose-hero {
+        grid-template-columns: 1fr;
+        padding: 45px 18px;
+        gap: 30px;
+    }
+
+    .rose-hero h1 {
+        font-size: 58px;
+    }
+
+    .rose-image img {
+        height: 430px;
+        border-radius: 120px 120px 18px 18px;
+    }
+
+    .rose-anatomy,
+    .rose-characteristics {
+        padding: 50px 18px;
+    }
+
+    .rose-anatomy h2,
+    .rose-characteristics h2,
+    .rose-pollination h2 {
+        font-size: 30px;
+    }
+
+    .anatomy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rose-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .rose-pollination {
+        padding: 55px 20px;
+    }
+
+    .rose-fact {
+        margin: 45px 18px;
+        padding: 35px 20px;
+    }
+
+    .rose-fact h2 {
+        font-size: 25px;
+    }
+}
+/* =================================
+   LOTUS BOTANICAL PAGE
+   ================================= */
+
+.lotus-hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 24px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.lotus-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 25px 25px 180px 180px;
+    display: block;
+}
+
+.lotus-intro h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    color: #19382b;
+    margin: 0;
+}
+
+.lotus-scientific {
+    font-size: 24px;
+    color: #68766e;
+    margin: 20px 0;
+}
+
+.lotus-intro > p:last-child {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #405248;
+}
+
+
+/* WATER SECTION */
+
+.lotus-water {
+    background: #e7eee9;
+    padding: 75px 24px;
+}
+
+.lotus-section-heading {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.lotus-section-heading h2,
+.lotus-flower h2,
+.lotus-profile h2 {
+    color: #19382b;
+    font-size: 38px;
+}
+
+.lotus-section-heading > p:last-child {
+    color: #4c6055;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.lotus-adaptations {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.lotus-adaptation {
+    background: #f7f4e9;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #d3ddd6;
+}
+
+.lotus-adaptation span {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #718078;
+}
+
+.lotus-adaptation h3 {
+    color: #19382b;
+    font-size: 23px;
+}
+
+.lotus-adaptation p {
+    color: #4b5e54;
+    line-height: 1.7;
+}
+
+
+/* FLOWER SECTION */
+
+.lotus-flower {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.lotus-flower > div:first-child p:last-child {
+    color: #4b5e54;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.lotus-flower-facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: #d1d0c8;
+}
+
+.lotus-flower-facts div {
+    background: #f7f4e9;
+    padding: 25px;
+}
+
+.lotus-flower-facts strong,
+.lotus-flower-facts span {
+    display: block;
+}
+
+.lotus-flower-facts strong {
+    color: #19382b;
+    margin-bottom: 8px;
+}
+
+.lotus-flower-facts span {
+    color: #596a61;
+}
+
+
+/* BOTANICAL PROFILE */
+
+.lotus-profile {
+    background: #f0ece2;
+    padding: 75px 24px;
+    text-align: center;
+}
+
+.lotus-profile-grid {
+    max-width: 950px;
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #cec9bd;
+}
+
+.lotus-profile-grid div {
+    background: #f7f4e9;
+    padding: 25px;
+}
+
+.lotus-profile-grid span,
+.lotus-profile-grid strong {
+    display: block;
+}
+
+.lotus-profile-grid span {
+    color: #78837c;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.lotus-profile-grid strong {
+    color: #19382b;
+}
+
+
+/* CULTURAL NOTE */
+
+.lotus-note {
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 50px 30px;
+    text-align: center;
+    border-radius: 25px;
+    background: #19382b;
+    color: #f7f4e9;
+}
+
+.lotus-note span {
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0.7;
+}
+
+.lotus-note h2 {
+    font-size: 29px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .lotus-hero {
+        grid-template-columns: 1fr;
+        padding: 45px 18px;
+        gap: 35px;
+    }
+
+    .lotus-image img {
+        height: 430px;
+        border-radius: 22px 22px 130px 130px;
+    }
+
+    .lotus-intro h1 {
+        font-size: 52px;
+    }
+
+    .lotus-adaptations {
+        grid-template-columns: 1fr;
+    }
+
+    .lotus-flower {
+        grid-template-columns: 1fr;
+        padding: 55px 18px;
+        gap: 35px;
+    }
+
+    .lotus-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lotus-note {
+        margin: 45px 18px;
+        padding: 38px 22px;
+    }
+
+    .lotus-note h2 {
+        font-size: 24px;
+    }
+}
+/* =================================
+   PLANT SEARCH & FILTERS
+   ================================= */
+
+.plant-tools {
+    max-width: 1000px;
+    margin: 0 auto 45px;
+    padding: 0 24px;
+}
+
+.plant-search {
+    margin-bottom: 22px;
+}
+
+.plant-search input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 20px;
+    border: 1px solid #cfcfc4;
+    border-radius: 12px;
+    background: #f7f4e9;
+    color: #19382b;
+    font-size: 17px;
+    outline: none;
+}
+
+.plant-search input::placeholder {
+    color: #7b827c;
+}
+
+.plant-search input:focus {
+    border-color: #19382b;
+}
+
+.plant-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    border: 1px solid #c8cec8;
+    background: #f7f4e9;
+    color: #30483c;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #19382b;
+    color: #f7f4e9;
+    border-color: #19382b;
+}
+
+.filter-btn:hover {
+    background: #19382b;
+    color: #f7f4e9;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .plant-tools {
+        padding: 0 16px;
+    }
+
+    .plant-search input {
+        font-size: 16px;
+    }
+
+    .filter-btn {
+        padding: 9px 15px;
+    }
+}
+/* =================================
+   PLANT CARD INTERACTION
+   ================================= */
+
+.plant-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.plant-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(25, 56, 43, 0.12);
+}
+
+.plant-card:active {
+    transform: scale(0.98);
+}
+/* =================================
+   HIBISCUS BOTANICAL PAGE
+   ================================= */
+
+.hibiscus-hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 75px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.hibiscus-title h1 {
+    font-size: 68px;
+    color: #19382b;
+    margin: 0;
+    line-height: 1;
+}
+
+.hibiscus-scientific {
+    font-size: 24px;
+    color: #68766e;
+    margin: 20px 0;
+}
+
+.hibiscus-title > p:last-child {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #405248;
+}
+
+.hibiscus-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 45% 12px 45% 12px;
+}
+
+
+/* FLOWER SPOTLIGHT */
+
+.hibiscus-spotlight {
+    background: #f1e8e1;
+    padding: 75px 24px;
+    text-align: center;
+}
+
+.hibiscus-spotlight > p,
+.hibiscus-spotlight > h2,
+.hibiscus-spotlight > p:nth-of-type(2) {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hibiscus-spotlight h2,
+.hibiscus-profile h2,
+.hibiscus-pollination h2 {
+    font-size: 38px;
+    color: #19382b;
+}
+
+.hibiscus-spotlight > p:nth-of-type(2) {
+    color: #4d5d55;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.hibiscus-parts {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.hibiscus-parts div {
+    background: #f8f5ed;
+    padding: 30px;
+    text-align: left;
+    border-radius: 18px;
+    border: 1px solid #ddd3ca;
+}
+
+.hibiscus-parts span {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #7b827c;
+}
+
+.hibiscus-parts h3 {
+    color: #19382b;
+    font-size: 23px;
+}
+
+.hibiscus-parts p {
+    color: #52635a;
+    line-height: 1.7;
+}
+
+
+/* BOTANICAL PROFILE */
+
+.hibiscus-profile {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 24px;
+}
+
+.hibiscus-profile-heading {
+    text-align: center;
+}
+
+.hibiscus-profile-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #cec9bd;
+}
+
+.hibiscus-profile-grid div {
+    background: #f7f4e9;
+    padding: 27px;
+}
+
+.hibiscus-profile-grid span,
+.hibiscus-profile-grid strong {
+    display: block;
+}
+
+.hibiscus-profile-grid span {
+    color: #7a837c;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.hibiscus-profile-grid strong {
+    color: #19382b;
+}
+
+
+/* POLLINATION */
+
+.hibiscus-pollination {
+    background: #e7eee9;
+    padding: 75px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hibiscus-pollination > div {
+    max-width: 500px;
+}
+
+.hibiscus-pollination h2 {
+    margin-bottom: 20px;
+}
+
+.hibiscus-pollination p:last-child {
+    color: #4c5e54;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.pollination-step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 18px 20px;
+    align-items: center;
+}
+
+.pollination-step span {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #19382b;
+    color: #f7f4e9;
+    font-size: 13px;
+}
+
+.pollination-step strong {
+    color: #19382b;
+}
+
+
+/* BOTANICAL NOTE */
+
+.hibiscus-note {
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 48px 30px;
+    text-align: center;
+    border: 1px solid #d4cfc3;
+    border-radius: 20px;
+}
+
+.hibiscus-note span {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #737c75;
+}
+
+.hibiscus-note h2 {
+    color: #19382b;
+    font-size: 29px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .hibiscus-hero {
+        grid-template-columns: 1fr;
+        padding: 45px 18px;
+        gap: 35px;
+    }
+
+    .hibiscus-title h1 {
+        font-size: 55px;
+    }
+
+    .hibiscus-image img {
+        height: 420px;
+    }
+
+    .hibiscus-parts {
+        grid-template-columns: 1fr;
+    }
+
+    .hibiscus-profile {
+        padding: 55px 18px;
+    }
+
+    .hibiscus-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hibiscus-pollination {
+        grid-template-columns: 1fr;
+        padding: 55px 20px;
+    }
+
+    .hibiscus-note {
+        margin: 45px 18px;
+        padding: 35px 20px;
+    }
+}
+/* =================================
+   BANYAN BOTANICAL PAGE
+   ================================= */
+
+.banyan-hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 75px 24px;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.banyan-image img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    display: block;
+    border-radius: 180px 180px 20px 20px;
+}
+
+.banyan-intro h1 {
+    font-size: 68px;
+    line-height: 1;
+    color: #19382b;
+    margin: 0;
+}
+
+.banyan-scientific {
+    font-size: 24px;
+    color: #68766e;
+    margin: 20px 0;
+}
+
+.banyan-intro > p:last-child {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #405248;
+}
+
+
+/* AERIAL ROOTS */
+
+.banyan-roots {
+    background: #e5ece5;
+    padding: 75px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.banyan-roots > div:first-child {
+    max-width: 520px;
+    margin-left: auto;
+}
+
+.banyan-roots h2,
+.banyan-profile h2,
+.banyan-ecology h2 {
+    color: #19382b;
+    font-size: 38px;
+}
+
+.banyan-roots > div:first-child p:last-child,
+.banyan-ecology > div:first-child p:last-child {
+    color: #4c5d53;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.banyan-root-facts {
+    max-width: 500px;
+}
+
+.banyan-root-facts div {
+    padding: 22px 0;
+    border-bottom: 1px solid #c7d1c8;
+}
+
+.banyan-root-facts span {
+    display: inline-block;
+    width: 38px;
+    color: #718078;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.banyan-root-facts strong {
+    color: #19382b;
+    font-size: 20px;
+}
+
+.banyan-root-facts p {
+    margin-left: 38px;
+    color: #53645a;
+    line-height: 1.6;
+}
+
+
+/* BOTANICAL PROFILE */
+
+.banyan-profile {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.banyan-profile-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #cec9bd;
+}
+
+.banyan-profile-grid div {
+    background: #f7f4e9;
+    padding: 27px;
+}
+
+.banyan-profile-grid span,
+.banyan-profile-grid strong {
+    display: block;
+}
+
+.banyan-profile-grid span {
+    color: #7a837c;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.banyan-profile-grid strong {
+    color: #19382b;
+}
+
+
+/* ECOLOGY */
+
+.banyan-ecology {
+    background: #f0ece2;
+    padding: 75px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.banyan-ecology > div:first-child {
+    max-width: 520px;
+    margin-left: auto;
+}
+
+.banyan-ecosystem-list {
+    max-width: 500px;
+}
+
+.banyan-ecosystem-list div {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    gap: 8px 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid #d5d0c5;
+}
+
+.banyan-ecosystem-list span {
+    grid-row: span 2;
+    color: #718078;
+    font-size: 13px;
+    padding-top: 3px;
+}
+
+.banyan-ecosystem-list strong {
+    color: #19382b;
+    font-size: 20px;
+}
+
+.banyan-ecosystem-list p {
+    margin: 0;
+    color: #596a61;
+    line-height: 1.5;
+}
+
+
+/* BOTANICAL NOTE */
+
+.banyan-note {
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 50px 30px;
+    text-align: center;
+    background: #19382b;
+    color: #f7f4e9;
+    border-radius: 20px;
+}
+
+.banyan-note span {
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0.7;
+}
+
+.banyan-note h2 {
+    font-size: 29px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .banyan-hero {
+        grid-template-columns: 1fr;
+        padding: 45px 18px;
+        gap: 35px;
+    }
+
+    .banyan-intro h1 {
+        font-size: 55px;
+    }
+
+    .banyan-image img {
+        height: 430px;
+        border-radius: 140px 140px 20px 20px;
+    }
+
+    .banyan-roots,
+    .banyan-ecology {
+        grid-template-columns: 1fr;
+        padding: 55px 20px;
+        gap: 35px;
+    }
+
+    .banyan-roots > div:first-child,
+    .banyan-ecology > div:first-child {
+        margin-left: 0;
+    }
+
+    .banyan-profile {
+        padding: 55px 18px;
+    }
+
+    .banyan-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banyan-note {
+        margin: 45px 18px;
+        padding: 38px 22px;
+    }
+
+    .banyan-note h2 {
+        font-size: 24px;
+    }
+}
+/* =================================
+   ALOE VERA BOTANICAL PAGE
+   ================================= */
+
+.aloe-hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 75px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.aloe-intro h1 {
+    font-size: 68px;
+    line-height: 1;
+    color: #19382b;
+    margin: 0;
+}
+
+.aloe-scientific {
+    font-size: 24px;
+    color: #68766e;
+    margin: 20px 0;
+}
+
+.aloe-intro > p:last-child {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #405248;
+}
+
+.aloe-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    display: block;
+    border-radius: 25px 180px 25px 180px;
+}
+
+
+/* LEAF ADAPTATION */
+
+.aloe-leaf {
+    background: #e7eee9;
+    padding: 75px 24px;
+    text-align: center;
+}
+
+.aloe-leaf > p,
+.aloe-leaf > h2 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aloe-leaf h2,
+.aloe-profile h2,
+.aloe-structure h2 {
+    color: #19382b;
+    font-size: 38px;
+}
+
+.aloe-leaf > p:nth-of-type(2) {
+    color: #4c5d53;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.aloe-features {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.aloe-features div {
+    background: #f7f4e9;
+    padding: 30px;
+    text-align: left;
+    border-radius: 18px;
+}
+
+.aloe-features span {
+    color: #718078;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.aloe-features h3 {
+    color: #19382b;
+    font-size: 23px;
+}
+
+.aloe-features p {
+    color: #52635a;
+    line-height: 1.7;
+}
+
+
+/* BOTANICAL PROFILE */
+
+.aloe-profile {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.aloe-profile-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: #cec9bd;
+}
+
+.aloe-profile-grid div {
+    background: #f7f4e9;
+    padding: 27px;
+}
+
+.aloe-profile-grid span,
+.aloe-profile-grid strong {
+    display: block;
+}
+
+.aloe-profile-grid span {
+    color: #7a837c;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.aloe-profile-grid strong {
+    color: #19382b;
+}
+
+
+/* PLANT STRUCTURE */
+
+.aloe-structure {
+    background: #f0ece2;
+    padding: 75px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.aloe-structure > div:first-child {
+    max-width: 520px;
+    margin-left: auto;
+}
+
+.aloe-structure > div:first-child p:last-child {
+    color: #4c5d53;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.aloe-layers {
+    max-width: 500px;
+}
+
+.aloe-layers div {
+    padding: 20px 0;
+    border-bottom: 1px solid #d5d0c5;
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    gap: 5px 15px;
+}
+
+.aloe-layers span {
+    grid-row: span 2;
+    color: #718078;
+    font-size: 13px;
+}
+
+.aloe-layers strong {
+    color: #19382b;
+    font-size: 20px;
+}
+
+.aloe-layers p {
+    margin: 0;
+    color: #596a61;
+    line-height: 1.5;
+}
+
+
+/* BOTANICAL NOTE */
+
+.aloe-note {
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 50px 30px;
+    text-align: center;
+    border: 1px solid #d4cfc3;
+    border-radius: 22px;
+}
+
+.aloe-note span {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #737c75;
+}
+
+.aloe-note h2 {
+    color: #19382b;
+    font-size: 29px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .aloe-hero {
+        grid-template-columns: 1fr;
+        padding: 45px 18px;
+        gap: 35px;
+    }
+
+    .aloe-intro h1 {
+        font-size: 55px;
+    }
+
+    .aloe-image img {
+        height: 430px;
+        border-radius: 25px 140px 25px 140px;
+    }
+
+    .aloe-features {
+        grid-template-columns: 1fr;
+    }
+
+    .aloe-profile {
+        padding: 55px 18px;
+    }
+
+    .aloe-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .aloe-structure {
+        grid-template-columns: 1fr;
+        padding: 55px 20px;
+        gap: 35px;
+    }
+
+    .aloe-structure > div:first-child {
+        margin-left: 0;
+    }
+
+    .aloe-note {
+        margin: 45px 18px;
+        padding: 38px 22px;
+    }
+
+    .aloe-note h2 {
+        font-size: 24px;
+    }
+}
+/* BACK TO PLANT COLLECTION */
+
+.back-to-plants {
+    display: block;
+    max-width: 1100px;
+    margin: 25px auto 0;
+    padding: 0 24px;
+    color: #52635a;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.back-to-plants:hover {
+    color: #19382b;
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+
+    .back-to-plants {
+        padding: 0 18px;
+        margin-top: 20px;
+    }
+
+}
+/* =================================
+   CATEGORIES PAGE
+   ================================= */
+
+.categories-hero {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 85px 24px 55px;
+    text-align: center;
+}
+
+.categories-hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    color: #19382b;
+    margin: 10px 0 20px;
+}
+
+.categories-hero > p:last-child {
+    max-width: 650px;
+    margin: auto;
+    color: #596a61;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* CATEGORY GRID */
+
+.category-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 24px 80px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+
+.category-card {
+    position: relative;
+
+    display: block;
+
+    padding: 35px;
+    min-height: 260px;
+
+    background: #f7f4e9;
+    border: 1px solid #ddd7ca;
+    border-radius: 22px;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.category-card:hover {
+    transform: translateY(-6px);
+    border-color: #aeb9ad;
+    box-shadow: 0 15px 35px rgba(25, 56, 43, 0.08);
+}
+
+
+.category-number {
+    position: absolute;
+    top: 25px;
+    right: 28px;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #8a938d;
+}
+
+
+.category-icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+
+.category-card h2 {
+    color: #19382b;
+    font-size: 29px;
+    margin: 0 0 12px;
+}
+
+
+.category-card p {
+    color: #596a61;
+    line-height: 1.7;
+    max-width: 450px;
+}
+
+
+.category-link {
+    display: inline-block;
+    margin-top: 15px;
+
+    color: #405b4c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.category-card-featured {
+    background: #19382b;
+    border-color: #19382b;
+}
+
+
+.category-card-featured h2,
+.category-card-featured p,
+.category-card-featured .category-link {
+    color: #f7f4e9;
+}
+
+
+.category-card-featured .category-number {
+    color: #aebdb2;
+}
+
+
+/* COLLECTION NOTE */
+
+.category-note {
+    max-width: 850px;
+    margin: 10px auto 80px;
+    padding: 55px 30px;
+
+    text-align: center;
+
+    border-top: 1px solid #d8d3c7;
+    border-bottom: 1px solid #d8d3c7;
+}
+
+
+.category-note h2 {
+    color: #19382b;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+.category-note p:last-child {
+    max-width: 650px;
+    margin: auto;
+
+    color: #596a61;
+    line-height: 1.8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .categories-hero {
+        padding: 55px 18px 35px;
+    }
+
+    .categories-hero h1 {
+        font-size: 45px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+        padding: 15px 18px 55px;
+    }
+
+    .category-card {
+        min-height: auto;
+        padding: 30px;
+    }
+
+    .category-note {
+        margin: 0 18px 55px;
+        padding: 40px 20px;
+    }
+
+    .category-note h2 {
+        font-size: 27px;
+    }
+
+}
+/* =================================
+   SEARCH PAGE
+   ================================= */
+
+.search-hero {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 80px 24px 55px;
+    text-align: center;
+}
+
+.search-hero h1 {
+    font-size: 58px;
+    color: #19382b;
+    margin: 10px 0 18px;
+}
+
+.search-hero > p:last-of-type {
+    color: #596a61;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.search-box {
+    max-width: 650px;
+    margin: 35px auto 0;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 17px 20px;
+    border: 1px solid #cfc9bc;
+    border-radius: 12px;
+    background: #fffdf7;
+    color: #19382b;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #718078;
+}
+
+.search-box button {
+    padding: 17px 27px;
+    border: none;
+    border-radius: 12px;
+    background: #19382b;
+    color: #f7f4e9;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    opacity: 0.9;
+}
+
+
+/* SEARCH RESULTS */
+
+.search-results-section {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px 24px 80px;
+}
+
+.search-results-header {
+    margin-bottom: 30px;
+}
+
+.search-results-header h2 {
+    color: #19382b;
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.search-result-card {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    min-height: 180px;
+
+    background: #f7f4e9;
+    border: 1px solid #ddd7ca;
+    border-radius: 18px;
+
+    overflow: hidden;
+    text-decoration: none;
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.search-result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(25, 56, 43, 0.08);
+}
+
+.search-result-image {
+    height: 100%;
+}
+
+.search-result-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search-result-info {
+    padding: 22px;
+}
+
+.search-result-category {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #718078;
+}
+
+.search-result-info h3 {
+    margin: 8px 0 5px;
+    color: #19382b;
+    font-size: 25px;
+}
+
+.search-result-info p {
+    margin: 0;
+    color: #68766e;
+}
+
+.search-result-link {
+    display: inline-block;
+    margin-top: 22px;
+    color: #405b4c;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.search-empty {
+    padding: 55px 20px;
+    text-align: center;
+    border: 1px dashed #cfc9bc;
+    border-radius: 18px;
+    color: #68766e;
+}
+
+.search-empty span {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .search-hero {
+        padding: 55px 18px 40px;
+    }
+
+    .search-hero h1 {
+        font-size: 45px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .search-results-section {
+        padding: 10px 18px 55px;
+    }
+
+    .search-results {
+        grid-template-columns: 1fr;
+    }
+
+    .search-result-card {
+        grid-template-columns: 115px 1fr;
+    }
+
+    .search-result-info {
+        padding: 17px;
+    }
+
+    .search-result-info h3 {
+        font-size: 21px;
+    }
+
+}
+/* =================================
+   CONSERVATION PAGE
+   ================================= */
+
+.conservation-hero {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 85px 24px 60px;
+    text-align: center;
+}
+
+.conservation-hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    color: #19382b;
+    margin: 12px 0 20px;
+}
+
+.conservation-hero > p:last-child {
+    max-width: 650px;
+    margin: auto;
+    color: #596a61;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* INTRODUCTION */
+
+.conservation-intro {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 65px 24px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    border-top: 1px solid #d8d3c7;
+    border-bottom: 1px solid #d8d3c7;
+}
+
+.conservation-intro h2 {
+    color: #19382b;
+    font-size: 36px;
+    line-height: 1.3;
+    margin-top: 10px;
+}
+
+.conservation-intro > p {
+    color: #596a61;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+/* CONSERVATION GRID */
+
+.conservation-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 75px 24px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.conservation-card {
+    position: relative;
+
+    padding: 32px;
+
+    background: #f7f4e9;
+    border: 1px solid #ddd7ca;
+    border-radius: 20px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.conservation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(25, 56, 43, 0.08);
+}
+
+.conservation-card > span {
+    position: absolute;
+    top: 22px;
+    right: 25px;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #8a938d;
+}
+
+.conservation-icon {
+    font-size: 36px;
+    margin-bottom: 18px;
+}
+
+.conservation-card h2 {
+    color: #19382b;
+    font-size: 25px;
+    margin: 0 0 12px;
+}
+
+.conservation-card p {
+    color: #596a61;
+    line-height: 1.7;
+}
+
+
+/* EVERYDAY ACTIONS */
+
+.conservation-actions {
+    background: #e7eee9;
+    padding: 75px 24px;
+    text-align: center;
+}
+
+.conservation-actions > h2 {
+    max-width: 700px;
+    margin: 12px auto 45px;
+
+    color: #19382b;
+    font-size: 34px;
+    line-height: 1.4;
+}
+
+.action-list {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+
+    background: #cbd5ce;
+}
+
+.action-list div {
+    background: #e7eee9;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+}
+
+.action-list strong {
+    color: #718078;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.action-list p {
+    margin: 0;
+    color: #4f6056;
+    line-height: 1.6;
+}
+
+
+/* CONSERVATION PLEDGE */
+
+.conservation-pledge {
+    max-width: 850px;
+    margin: 75px auto;
+    padding: 65px 30px;
+
+    text-align: center;
+
+    background: #19382b;
+    border-radius: 24px;
+}
+
+.conservation-pledge > span {
+    color: #aebdb2;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.conservation-pledge h2 {
+    color: #f7f4e9;
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.conservation-pledge p {
+    max-width: 650px;
+    margin: auto;
+
+    color: #d8e0da;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .conservation-hero {
+        padding: 55px 18px 40px;
+    }
+
+    .conservation-hero h1 {
+        font-size: 45px;
+    }
+
+    .conservation-intro {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 50px 18px;
+    }
+
+    .conservation-intro h2 {
+        font-size: 30px;
+    }
+
+    .conservation-grid {
+        grid-template-columns: 1fr;
+        padding: 55px 18px;
+    }
+
+    .action-list {
+        grid-template-columns: 1fr;
+    }
+
+    .conservation-actions {
+        padding: 55px 18px;
+    }
+
+    .conservation-actions > h2 {
+        font-size: 28px;
+    }
+
+    .conservation-pledge {
+        margin: 45px 18px;
+        padding: 50px 22px;
+    }
+
+    .conservation-pledge h2 {
+        font-size: 34px;
+    }
+
+}
+/* =================================
+   ABOUT PAGE
+   ================================= */
+
+.about-hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 90px 24px 70px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 60px;
+    line-height: 1.08;
+    color: #19382b;
+    margin: 12px 0 25px;
+}
+
+.about-hero > p:last-child {
+    max-width: 680px;
+    margin: auto;
+    color: #596a61;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* INTRO */
+
+.about-intro {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 24px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    border-top: 1px solid #d8d3c7;
+    border-bottom: 1px solid #d8d3c7;
+}
+
+.about-intro h2 {
+    color: #19382b;
+    font-size: 37px;
+    line-height: 1.3;
+    margin-top: 10px;
+}
+
+.about-intro p:not(.eyebrow) {
+    color: #596a61;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+/* PURPOSE */
+
+.about-purpose {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.about-purpose > h2 {
+    color: #19382b;
+    font-size: 40px;
+    margin: 10px 0 45px;
+}
+
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.purpose-grid article {
+    padding: 35px;
+    text-align: left;
+
+    background: #f7f4e9;
+    border: 1px solid #ddd7ca;
+    border-radius: 20px;
+}
+
+.purpose-grid span {
+    color: #8a938d;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.purpose-grid h3 {
+    color: #19382b;
+    font-size: 28px;
+    margin: 20px 0 12px;
+}
+
+.purpose-grid p {
+    color: #596a61;
+    line-height: 1.7;
+}
+
+
+/* COLLECTION */
+
+.about-collection {
+    max-width: 1000px;
+    margin: 0 auto 75px;
+    padding: 55px;
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 40px;
+
+    background: #e7eee9;
+    border-radius: 22px;
+}
+
+.collection-number {
+    font-size: 45px;
+    color: #718078;
+}
+
+.about-collection h2 {
+    color: #19382b;
+    font-size: 36px;
+    margin: 10px 0 18px;
+}
+
+.about-collection p:not(.eyebrow) {
+    color: #596a61;
+    line-height: 1.8;
+}
+
+
+/* CREATOR */
+
+.about-creator {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px 24px 80px;
+    text-align: center;
+}
+
+.about-creator h2 {
+    color: #19382b;
+    font-size: 36px;
+    margin: 12px 0 18px;
+}
+
+.about-creator > p:last-child {
+    color: #596a61;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* FINAL NOTE */
+
+.about-note {
+    max-width: 850px;
+    margin: 0 auto 80px;
+    padding: 65px 30px;
+
+    text-align: center;
+
+    background: #19382b;
+    border-radius: 24px;
+}
+
+.about-note > span {
+    color: #aebdb2;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.about-note h2 {
+    color: #f7f4e9;
+    font-size: 40px;
+    margin: 16px 0;
+}
+
+.about-note p {
+    max-width: 600px;
+    margin: auto;
+    color: #d8e0da;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .about-hero {
+        padding: 55px 18px 45px;
+    }
+
+    .about-hero h1 {
+        font-size: 45px;
+    }
+
+    .about-intro {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 50px 18px;
+    }
+
+    .about-intro h2 {
+        font-size: 30px;
+    }
+
+    .about-purpose {
+        padding: 55px 18px;
+    }
+
+    .about-purpose > h2 {
+        font-size: 32px;
+    }
+
+    .purpose-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-collection {
+        margin: 0 18px 55px;
+        padding: 35px 25px;
+
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .collection-number {
+        font-size: 35px;
+    }
+
+    .about-collection h2 {
+        font-size: 30px;
+    }
+
+    .about-creator {
+        padding: 10px 18px 55px;
+    }
+
+    .about-note {
+        margin: 0 18px 55px;
+        padding: 50px 22px;
+    }
+
+    .about-note h2 {
+        font-size: 32px;
+    }
+
+}
+/* =================================
+   FINAL POLISH
+   ================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    transition:
+        color 0.2s ease,
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+button {
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.96);
+}
